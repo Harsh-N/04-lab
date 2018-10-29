@@ -1,52 +1,16 @@
 
-
-h1{
-  display: flex;
-  justify-content:center;
+body{
+  background-color: blue;
 }
 
-
-nav{
-  display:flex;
-  justify-content: center;
-  background-color: lightblue;
-  opacity: 0.7;
+@media screen and (min-width: 500px) {
+  body{
+    background-color: red;
+}
 }
 
-
-@keyframes changeColor {
-  0% {background-color: red}
-    25% {background-color: orange}
-      75% {background-color: yellow}
-        100% {background-color: red}
-}
-
-
-a{
-  width: 80px;
-  padding:10px;
-  transition: all cubic-bezier(0.78, 0.37, 0.32, 0.62) .8s;
-}
-
-
-a:hover{
-  background-color: orange;
-    animation: changeColor 2s infinite;
-}
-
-
-main{
-  float: left;
-}
-
-
-@media screen and (max-width: 600px) {
-  body {
-    background-color: olive;
-  }
-
-  nav{
-    display: flex;
-    flex-direction: column;
+@media screen and (min-width: 1000px) {
+  body{
+    background-color: orange;
   }
 }
