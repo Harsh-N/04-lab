@@ -1,0 +1,52 @@
+
+
+h1{
+  display: flex;
+  justify-content:center;
+}
+
+
+nav{
+  display:flex;
+  justify-content: center;
+  background-color: lightblue;
+  opacity: 0.7;
+}
+
+
+@keyframes changeColor {
+  0% {background-color: red}
+    25% {background-color: orange}
+      75% {background-color: yellow}
+        100% {background-color: red}
+}
+
+
+a{
+  width: 80px;
+  padding:10px;
+  transition: all cubic-bezier(0.78, 0.37, 0.32, 0.62) .8s;
+}
+
+
+a:hover{
+  background-color: orange;
+    animation: changeColor 2s infinite;
+}
+
+
+main{
+  float: left;
+}
+
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: column;
+  }
+}
